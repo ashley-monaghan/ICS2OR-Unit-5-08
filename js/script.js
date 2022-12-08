@@ -25,7 +25,7 @@ function myButtonClicked() {
   var numB = parseFloat(document.getElementById("secondInputedNumber").value)
   var counter = 0
 
-  while (remainder > Math.abs(numB)) {
+  while (remainder >= Math.abs(numB)) {
     remainder = remainder - Math.abs(numB)
     counter++
   }
