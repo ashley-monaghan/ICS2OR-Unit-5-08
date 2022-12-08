@@ -30,6 +30,6 @@ function myButtonClicked() {
     counter++
   }
 
-  document.getElementById("remainder").innerHTML =
-    "The remainder is: " + counter + "R" + remainder + "!"
+  document.getElementById("answer").innerHTML =
+    "The answer is: " + counter + "R " + remainder + "!"
 }
