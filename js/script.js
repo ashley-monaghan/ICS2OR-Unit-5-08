@@ -19,12 +19,11 @@ if (navigator.serviceWorker) {
  * This function does multiplication.
  */
 function myButtonClicked() {
-  var numA = parseFloat(document.getElementById("firstInputedNumber").value)
+  var remainder = parseFloat(document.getElementById("firstInputedNumber").value)
   var numB = parseFloat(document.getElementById("secondInputedNumber").value)
-  var remainder = 0
   var counter = 0
 
-  while (counter > Math.abs(numB)) {
+  while (remainder > Math.abs(numB)) {
     remainder = remainder - Math.abs(numB)
     counter++
   }
