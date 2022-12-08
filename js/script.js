@@ -31,5 +31,5 @@ function myButtonClicked() {
   }
 
   document.getElementById("answer").innerHTML =
-    "The answer is: " + counter + "R " + remainder + "!"
+    "The answer is: " + counter + " R" + remainder + "!"
 }
