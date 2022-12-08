@@ -16,25 +16,18 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
- * Math
+ * This function does multiplication.
  */
-function calculate() {
-  // input
-  const a = parseInt(document.getElementById("textbox-a").value)
-  const b = parseInt(document.getElementById("textbox-b").value)
-  const c = parseInt(document.getElementById("textbox-c").value)
+function myButtonClicked() {
+  var numA = parseFloat(document.getElementById("firstInputedNumber").value)
+  var numB = parseFloat(document.getElementById("secondInputedNumber").value)
+  var remainder = 0
+  var counter = 0
 
-  // process
-  const math = a + b + c
-  // output
-  document.getElementById("math").innerHTML = "Numbers: " + math + " units"
-}
+  while (counter > Math.abs(numB)) {
+    remainder = remainder - Math.abs(numB)
+    counter++
+  }
 
-/**
- * This function displays an alert.
- * Words
- */
-function button() {
-  document.getElementById("words").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("remainder").innerHTML = "The remainder is: " + remainder
 }
