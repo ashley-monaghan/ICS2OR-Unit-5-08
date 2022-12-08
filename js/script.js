@@ -31,5 +31,5 @@ function myButtonClicked() {
   }
 
   document.getElementById("remainder").innerHTML =
-    "The remainder is: " + remainder
+    "The remainder is: " + counter + remainder
 }
